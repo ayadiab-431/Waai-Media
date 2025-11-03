@@ -1,0 +1,27 @@
+.overlay{
+    background-color: var(--overlay);
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.sidebar {
+    background-color: var(--white);
+    max-width: 70%;
+    left: -80%;
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    z-index: 3000;
+}
+.sidebar.show {
+    left: 0;
+}
+.sidebar .close-btn {
+    cursor: pointer;
+    margin-left: auto;
+}

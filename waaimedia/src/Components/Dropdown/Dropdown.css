@@ -1,0 +1,87 @@
+.dropdown {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    vertical-align: middle;
+    color: var(--text-gray-dark);
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropdown:hover,
+.dropdown .dropdown-list li:hover > a {
+    color: var(--primary-rose);
+    font-weight: 700;
+}
+
+.dropdown.active {
+    color: var(--text-black);
+    font-weight: 700;
+}
+
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.dropdown .droplist-container {
+    z-index: 1000;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+.dropdown .dropdown-list {
+    padding: 0;
+    gap: 6px;
+    background-color: var(--secondry-bg-color);
+    top: 28px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
+    min-width: 147px;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.5s ease;
+    -webkit-transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.5s ease;
+    -moz-transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.5s ease;
+    -ms-transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.5s ease;
+    -o-transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.5s ease;
+}
+
+.dropdown .dropdown-list li > a {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    vertical-align: middle;
+    color: var(--text-gray-dark);
+    text-decoration: none;
+    text-wrap: nowrap;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+}
+
+
+.dropdown .droplist-container.open .dropdown-list {
+    max-height: 500px;
+    opacity: 1;
+    padding: 12px;
+}
+

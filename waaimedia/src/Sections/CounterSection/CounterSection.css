@@ -1,0 +1,22 @@
+.counter-section {
+    background-color: var(--primary-rose);
+}
+.counter-section .counter-section-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    max-width: 1121px;
+    gap: 36px;
+}
+.counter-section .counter-section-container .counter {
+    color: var(--white);
+}
+.counter-section .counter-section-container .counter .counter-number {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+}
+.counter-section .counter-section-container .counter .name {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+}

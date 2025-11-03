@@ -1,0 +1,37 @@
+.service-card {
+    max-width: 370px;
+    height: auto;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    padding: 2rem;
+    background-color: #FBEFF4;
+    border: 1px solid var(--border-color);
+    gap: 0.75rem;
+}
+.service-card .icon > img {
+    width: 48px;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+.service-card .card-heading {
+    max-width: 14rem;
+    font-size: 1.125rem;
+    line-height: 28px;
+    color: var(--text-black);
+    text-align: center;
+    font-weight: 400;
+}
+.service-card .card-description {
+    max-width: 306px;
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: center;
+    color: var(--text-gary-dark);
+    vertical-align: middle;
+}

@@ -1,0 +1,18 @@
+.text-link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--secondary-blue);
+    gap: 2px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.text-link:hover {
+    color: #007299B2;
+}
+.text-link:hover > span {
+    text-decoration-line: underline;
+}

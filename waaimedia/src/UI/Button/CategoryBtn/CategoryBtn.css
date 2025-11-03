@@ -1,0 +1,27 @@
+.category-btn {
+    padding: 8px 24px;
+    border-radius: 9999px;
+    -webkit-border-radius: 9999px;
+    -moz-border-radius: 9999px;
+    -ms-border-radius: 9999px;
+    -o-border-radius: 9999px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--secondry-bg-color);
+    color: var(--text-gray-dark);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.category-btn:hover,
+.category-btn.active {
+    background-color: var(--primary-rose);
+    color: #fff;
+}

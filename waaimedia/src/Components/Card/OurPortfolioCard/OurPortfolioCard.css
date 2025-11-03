@@ -1,0 +1,38 @@
+.portfolio-card {
+    max-width: 389px;
+    gap: 1rem;
+}
+.portfolio-card .portfolio-img {
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+    background-color: #D1D5DB;
+    max-width: 389px;
+}
+.portfolio-card .portfolio-img > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+.portfolio-card .card-heading {
+    font-size: 1.125rem;
+    max-width: 107px;
+    line-height: 28px;
+    vertical-align: middle;
+    color: var(--text-black);
+    font-weight: 400;
+}
+.portfolio-card .card-description {
+    max-width: 175px;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+    color: var(--text-gray-dark);
+}

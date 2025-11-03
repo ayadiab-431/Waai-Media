@@ -1,0 +1,21 @@
+.topbar {
+    background-color: var(--primary-rose);
+}
+.topbar .custome-container {
+    max-width: 1216px;
+}
+.topbar .date {
+    max-width: 160px;
+    color: var(--white);
+    font-size: clamp(12px, 1.5vw, 14px);
+    line-height: 1rem;
+    font-weight: 400;
+    vertical-align: middle;
+}
+.topbar .social-media-container {
+    max-width: 164px;
+    gap: 12px;
+}
+.topbar .social-media-container img {
+    width: clamp(24px, 5vw, 32px);
+}

@@ -1,0 +1,24 @@
+.navbar .links {
+    max-width: 732px;
+}
+.navbar .links .link > a {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 400;
+    vertical-align: middle;
+    color: var(--text-gray-dark);
+    text-decoration: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.navbar .links .link:hover > a {
+    color: var(--primary-rose);
+    font-weight: 700;
+}
+.navbar .links .link > a.active {
+    color: var(--text-black);
+    font-weight: 700;
+}
