@@ -9,14 +9,37 @@ export default function Navbar({mobile = false}){
 
     const links = [
         {name: 'Home', path: '/', id: 'home'},
-        {name: 'About', path: '/', id: 'about'},
+        {name: 'News', path: '/', id: 'news'}, 
+        {name: 'About', path: '/about', id: 'about'},
         {name: 'Services', path: '/', id: 'services'},
         {name: 'Portfolio', path: '/', id: 'portfolio'},
-        {name: 'News', path: '/', id: 'news'},
         {name: 'Blogs', path: '/', id: 'blogs'},
         {name: 'Events Calender', path: '/', id: 'events'},
         {name: 'Contact', path: '/', id: 'contact'},
     ]
+
+        // News Links
+        const navLinks = [
+            { 
+                name: 'Entertainment', 
+                path: '/entertainment', 
+                id: 'entertainment',
+                subLinks: [
+                { name: 'Celebrities', path: '/entertainment/celebrities', id: 'celebrities' },
+                { name: 'In Theaters', path: '/entertainment/in-theaters', id: 'in-theaters' },
+                { name: 'TV Shows', path: '/entertainment/tv-shows', id: 'tv-shows' },
+                { name: 'Book Reviews', path: '/entertainment/book-reviews', id: 'book-reviews' }
+                ]
+            },
+            { name: 'Food', path: '/food', id: 'food' },
+            { name: 'Fashion & Beauty', path: '/fashion-beauty', id: 'fashion-beauty' },
+            { name: 'Travel', path: '/travel', id: 'travel' },
+            { name: 'Economy', path: '/economy', id: 'economy' },
+            { name: 'Sports', path: '/sports', id: 'sports' },
+            { name: 'Health', path: '/health', id: 'health' },
+            { name: 'Podcast', path: '/podcast', id: 'podcast' },
+            { name: 'Events', path: '/events', id: 'events' },
+            ];
 
     return (
         <nav className={`navbar ${mobile ? 'py-3 px-3 d-flex overflow-auto' : ''}`} 
@@ -32,7 +55,7 @@ export default function Navbar({mobile = false}){
                                 title={link.name}
                                 id = {link.id}
                                activeId = {linkActive} 
-                               setActive = {setLinkActive}
+                               navLinks={navLinks}
                                onClick={()=> setLinkActive(link.id)} 
                                />)
                     :

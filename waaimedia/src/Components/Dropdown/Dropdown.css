@@ -17,7 +17,8 @@
 }
 
 .dropdown:hover,
-.dropdown .dropdown-list li:hover > a {
+.dropdown .dropdown-list li:hover > a,
+.dropdown .dropdown-list .dropdown-item {
     color: var(--primary-rose);
     font-weight: 700;
 }
@@ -41,12 +42,12 @@
     -moz-border-radius: var(--border-radius);
     -ms-border-radius: var(--border-radius);
     -o-border-radius: var(--border-radius);
+    top: 28px;
 }
 .dropdown .dropdown-list {
     padding: 0;
     gap: 6px;
     background-color: var(--secondry-bg-color);
-    top: 28px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
     min-width: 147px;
     max-height: 0;
@@ -84,4 +85,48 @@
     opacity: 1;
     padding: 12px;
 }
+
+/* For nested dropdown */
+/* === Sub Dropdown (for Entertainment etc.) === */
+
+.sub-dropdown-list {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 10px;
+    background-color: var(--secondry-bg-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
+    margin-top: 5px;
+    transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.5s ease;
+    opacity: 0;
+    -webkit-transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.5s ease;
+    -moz-transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.5s ease;
+    -ms-transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.5s ease;
+    -o-transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.5s ease;
+    -webkit-border-radius: var(--border-radius);
+    -moz-border-radius: var(--border-radius);
+    -ms-border-radius: var(--border-radius);
+    -o-border-radius: var(--border-radius);
+}
+
+.sub-dropdown-list.open {
+    max-height: 500px; /* ارتفاع كافي لما تتفتح */
+    opacity: 1;
+    padding: 10px 10px 10px 15px;
+}
+
+.sub-dropdown-list li {
+    padding: 4px 0;
+}
+
+.dropdown-item > div svg {
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
+
+
 

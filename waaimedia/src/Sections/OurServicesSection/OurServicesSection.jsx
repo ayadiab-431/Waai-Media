@@ -2,7 +2,21 @@ import SectionHeader from "../../Components/SectionHeader/SectionHeader";
 import OurServicesCard from '../../Components/Card/OurServicesCard/OurServicesCard';
 import TextLink from "../../UI/TextLink/TextLink";
 import './OurServicesSection.css';
-export default function OurServicesSection (){
+import { useEffect, useState } from "react";
+export default function OurServicesSection ({limit = false}){
+
+    // for Home page
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768)
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, [])
 
     // Our Services
     const ourServices = [
@@ -17,6 +31,10 @@ export default function OurServicesSection (){
         {id : 'events-activations', icon : 'events.svg', title : 'Events & Activations', description : 'Planning and executing memorable events that bring your brand to life and connect you with your audience.'},
         {id : 'openings-launches', icon : 'opening.svg', title : 'Openings & Launches', description : 'Organizing exclusive openings and product launches that leave a lasting first impression.'},
     ]
+
+    // Displayed Services
+    const displayedServices = limit ? (isMobile ? ourServices.slice(0, 3) : ourServices.slice(0, 6)) : ourServices
+
     return (
         <section className="our-services-section">
             <div className="our-services-section-container d-flex aling-items-center justify-content-center flex-column gap-5">
@@ -24,7 +42,7 @@ export default function OurServicesSection (){
                     description={'Comprehensive digital marketing solutions tailored to your business needs'}
                 />
                 <div className="our-services-wrapper w-100 gap-5 d-flex aling-items-center justify-content-center flex-wrap">
-                    {ourServices.map((service) => (
+                    {displayedServices.map((service) => (
                         <OurServicesCard
                         key={service.id}
                         iconName={service.icon}
@@ -33,11 +51,11 @@ export default function OurServicesSection (){
                     />
                     ))}
                 </div>
-                <TextLink 
+                {limit && (<TextLink 
                     textLink={'View all services'}
                     toLink={'/our-services'}
                     center = {true}
-                    />
+                    />)}
             </div>
             
         </section>

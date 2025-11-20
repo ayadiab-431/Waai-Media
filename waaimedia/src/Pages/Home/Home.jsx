@@ -1,7 +1,7 @@
 import Header from "../../Components/Header/Header";
 import LogoVideo from "../../Components/LogoVideo/LogoVideo";
 import HighlightsSlider from "../../Components/Slider/HighlightsSlider/HighlightsSlider";
-import AboutSection from "../../Sections/AboutSection/AboutSection";
+import AboutSection from "../../Sections/AboutUs/AboutSection/AboutSection";
 import CounterSection from "../../Sections/CounterSection/CounterSection";
 import OurServicesSection from "../../Sections/OurServicesSection/OurServicesSection";
 
@@ -14,7 +14,7 @@ export default function Home () {
             <HighlightsSlider />
             <AboutSection />
             <CounterSection />
-            <OurServicesSection />
+            <OurServicesSection limit = {true}/>
         </div>
     );
 }

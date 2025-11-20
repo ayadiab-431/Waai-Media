@@ -32,3 +32,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
 } 
+.about-us-section.about-page .about-us-description {
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: visible;
+    text-overflow: unset;
+}

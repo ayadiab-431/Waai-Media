@@ -13,11 +13,36 @@ export default function Topbar() {
             <div className="custome-container w-100 d-flex align-items-center justify-content-between gap-4">
                 <div className="date">{formattedDate}</div>
                 <ul className="social-media-container p-0 m-0 d-flex align-items-center justify-content-center flex-wrap">
-                    <li><img src= {`${import.meta.env.BASE_URL}assets/facebook.svg`} alt="instagram-icon" /></li>
-                    <li><img src= {`${import.meta.env.BASE_URL}assets/instagram.svg`} alt="facebook-icon"/></li>
-                    <li><img src= {`${import.meta.env.BASE_URL}assets/tiktok.svg`} alt="tiktok-icon" /></li>
-                    <li><img src= {`${import.meta.env.BASE_URL}assets/youtube.svg`} alt="youtube-icon" /></li>
-                </ul>
+                    <li>
+                        <a href="https://www.facebook.com/share/1C6phBHbBB/" target="_blank" rel="noopener noreferrer">
+                        <img src={`${import.meta.env.BASE_URL}assets/icons/facebook.svg`} alt="facebook-icon" />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/waai_media?igsh=MWVoZXZwYjZ6NG1oMA==" target="_blank" rel="noopener noreferrer">
+                        <img src={`${import.meta.env.BASE_URL}assets/icons/instagram.svg`} alt="instagram-icon" />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.tiktok.com/@waaimedia?_t=ZS-8zape7BmKSW&_r=1" target="_blank" rel="noopener noreferrer">
+                        <img src={`${import.meta.env.BASE_URL}assets/icons/tiktok.svg`} alt="tiktok-icon" />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://youtube.com/@waaimedia?si=L7aO1wb_XAaQY3Oh" target="_blank" rel="noopener noreferrer">
+                        <img src={`${import.meta.env.BASE_URL}assets/icons/youtube.svg`} alt="youtube-icon" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com/@waaimedia?si=L7aO1wb_XAaQY3Oh" target="_blank" rel="noopener noreferrer">
+                        <img src={`${import.meta.env.BASE_URL}assets/icons/linkedin.svg`} alt="linkedin-icon" />
+                        </a>
+                    </li>
+                    </ul>
+
             </div>
         </div>
     );

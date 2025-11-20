@@ -13,9 +13,9 @@
     vertical-align: middle;
 }
 .topbar .social-media-container {
-    max-width: 164px;
+    max-width: 208px;
     gap: 12px;
 }
 .topbar .social-media-container img {
-    width: clamp(24px, 5vw, 32px);
+    width: clamp(20px, 5vw, 32px);
 }
